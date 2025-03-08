@@ -1,0 +1,23 @@
+import torch
+import torch.nn as nn #neural network lib
+import torch.nn.functional as F #forward propagation
+import numpy as np
+
+#create model class that inherits from nn.Module
+class Model(nn.Module):
+    #Input Layer 
+    def __init__(self, in_features = 4, h1 = 10, h2 = 19, out_features = 4): #create NN
+        super().__init__() #instantiate nn.Model
+        self.fc1 = nn.Linear(in_features, h1)
+        self.fc2 = nn.Linear(h1, h2)
+        self.output = nn.Linear(h2, out_features)
+
+    def forward(self, x): #forward propagation
+        x = F.relu(self.fc1(x))
+        x = F.relu(self.fc2(x))
+        x = self.output(x)
+        
+        return x
+    
+def softmax(x):
+    return np.exp(x) / np.sum(np.exp(x), axis = 0)
