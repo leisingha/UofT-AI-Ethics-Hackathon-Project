@@ -21,3 +21,12 @@ class Model(nn.Module):
     
 def softmax(x):
     return np.exp(x) / np.sum(np.exp(x), axis = 0)
+    
+model = Model() #create instance of neural network
+input = np.array([70,1,0,80])
+input = torch.FloatTensor(input)
+output = model.forward(input)
+array = output.detach().numpy()
+array = softmax(array)
+print(array)
+print(np.argmax(array))
