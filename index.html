@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSense - AI-Powered Learning Pathways</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="ACOE_favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-main" id="skip-main" href="#maincontent"> Skip to main content</a>
+
+  <noscript>
+    <p id="noscript">JavaScript is disabled or your browser doesn't support it. </p>
+  </noscript>
+
+  <main>
+    <div class="banner-fill">
+      <div class="header h-index">
+        <img class="home" src="education-logo.svg" alt="">
+        <h1>EduSense: Personalized Learning Journey</h1>
+      </div>
+    </div>
+    
+    <div class="content" id="maincontent">
+      <p>
+        Welcome to EduSense, an intelligent learning platform that adapts to your unique learning style and capabilities.
+      </p>
+      <p>
+        Our advanced neural network technology analyzes your learning characteristics and preferences to create a personalized educational journey that maximizes your potential. By understanding how you learn best, we curate content and learning experiences that align perfectly with your individual needs.
+      </p>
+      <p>
+        Whether you're a visual learner, prefer hands-on experiences, or thrive with theoretical concepts, our AI-powered system will identify your learning style and adapt the curriculum accordingly. This personalized approach ensures that every student receives the most effective and engaging educational experience possible.
+      </p>
+    </div>
+
+    <div class="yellow-box">
+        <span class="thick">How does EduSense work?</span>
+        <br aria-hidden="true"><br aria-hidden="true">
+          Using advanced machine learning and the softmax regression algorithm, our neural network processes your learning profile data to classify your learning style and preferences. This allows us to dynamically adjust content presentation and learning strategies to match your optimal learning path.
+    </div>
+
+    <div class="content">  
+      <div class="guideline">
+        <div class="row">
+          <div class="column">
+            <h2><span class="thick">Getting Started</span></h2>
+
+            <p>Begin your personalized learning journey in three simple steps:</p>
+            <ul class="getting-started">
+              <li>Complete the <span class="thick"><a href=#sa-checklist>Learning Profile Assessment</a></span> and select Submit. <br aria-hidden="true"> Our AI will analyze your responses to create your personalized learning path.</li>
+              <li>Review your <span class="thick"><a href=#TOC>Customized Learning Plan</a></span> to understand your recommended path.</li>
+              <li>Start your journey with AI-curated content tailored to your learning style.</li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <h2><span class="thick">Our Learning Categories</span></h2>
+
+            <p>Our AI system classifies learning styles into distinct categories to provide optimized content: </p>
+
+            <ul class="legend">
+              <li class="green"><span class="thick">Visual Learners (Green)</span> - Receive content rich in diagrams, charts, and visual explanations</li>
+              <li class="purple"><span class="thick">Auditory Learners (Purple)</span> - Access enhanced audio content and interactive discussions</li>
+              <li class="blue"><span class="thick">Kinesthetic Learners (Blue)</span> - Engage with hands-on exercises and practical applications</li>
+              <li class="yellow"><span class="thick">Analytical Learners (Yellow)</span> - Focus on logical progression and theoretical foundations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="content"></div>
+      <div id="sa-checklist" class="checklist">
+        <h2 class="check-header"> <span class="thick">Learning Profile Assessment</span></h2>
+
+        <p class="check-info">Help us understand your learning preferences by selecting all the options that apply to you. Our AI will analyze your responses to create your personalized learning experience.</p>
+
+        <form class="checklist-form" action="result.html" method="get">
+          
+          <ul class="check-options">
+            <li>
+              <input type="checkbox" class="lcheck" id="yes1" name="visual" value="yes">
+              <label for="yes1">I learn best through visual aids (diagrams, charts, videos)</label>
+            </li>
+
+            <li>
+              <input type="checkbox" class="lcheck" id="yes2" name="auditory" value="yes">
+              <label for="yes2">I prefer listening to explanations and audio content</label>
+            </li>
+
+            <li>
+              <input type="checkbox" class="lcheck" id="yes3" name="interactive" value="yes">
+              <label for="yes3">I enjoy interactive learning and hands-on exercises</label>
+            </li>
+
+            <li>
+              <input type="checkbox" class="lcheck" id="yes4" name="theoretical" value="yes">
+              <label for="yes4">I like understanding theoretical concepts and principles</label>
+            </li>
+
+            <li>
+              <input type="checkbox" class="lcheck" id="yes5" name="social" value="yes">
+              <label for="yes5">I learn better through group discussions and collaboration</label>
+            </li>
+
+            <li>
+              <input type="checkbox" class="lcheck" id="yes6" name="self_paced" value="yes">
+              <label for="yes6">I prefer self-paced, independent learning</label>
+            </li>
+          </ul>
+          <div class="check-button">
+            <input class="button-submit" type="submit" value="Analyze My Learning Style" >
+          </div>
+          
+        </form>
+      </div>
+      <div id="TOC" class="TOC">
+        <br aria-hidden="true">
+        <h2 class="TOC-header"><span class="thick">Learning Pathways</span></h2>
+        
+        <div class="toc-row">
+          <div class="col">
+            <span class="thick"><p><a href="visual-learning.html">Visual Learning Path</a></p></span>
+            <ul class="toc-list">
+              <li>Interactive Diagrams</li>
+              <li>Video Tutorials</li>
+              <li>Infographics</li>
+              <li>Code Visualization</li>
+            </ul>
+
+            <span class="thick"><p><a href="auditory-learning.html">Auditory Learning Path</a></p></span>
+            <ul class="toc-list">
+              <li>Audio Lectures</li>
+              <li>Code Reading Sessions</li>
+              <li>Verbal Problem Solving</li>
+              <li>Discussion Groups</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <span class="thick"><p><a href="kinesthetic-learning.html">Kinesthetic Learning Path</a></p></span>
+            <ul class="toc-list">
+              <li>Hands-on Coding</li>
+              <li>Interactive Exercises</li>
+              <li>Project Building</li>
+              <li>Live Coding Practice</li>
+            </ul>
+
+            <span class="thick"><p><a href="analytical-learning.html">Analytical Learning Path</a></p></span>
+            <ul class="toc-list">
+              <li>Theoretical Foundations</li>
+              <li>Algorithm Analysis</li>
+              <li>Best Practices</li>
+              <li>Code Architecture</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="yellow-box">
+      Have questions about EduSense? Contact our team at edusense.team@example.com
+    </div>
+    
+    <div class="content">
+      <div class="nav-bottom-two">
+        <button class="buttnav" onclick="window.location.href='#maincontent'">
+          <i class="fa-solid fa-xl fa-circle-chevron-up" style="color: #000000;"></i>
+          &nbsp;
+          TOP
+        </button>
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <h2>About This Project</h2>
+      <p>EduSense was developed as part of the University of Toronto AI Ethics Hackathon. Our team is committed to creating ethical AI solutions that enhance education while prioritizing student privacy and personalized learning experiences.</p>
+      <ul>
+          <li>🏆 UofT AI Ethics Hackathon 2024</li>
+          <li>🤝 Open to collaboration and feedback</li>
+          <li>📧 Contact us: edusense.team@example.com</li>
+      </ul>
+      <p class="copyright">© 2024 EduSense Team. Created with ❤️ for education.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
